@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_24sdp"
+    android:scrollbars="none"
+    tools:context=".SesionStart.RegistrerActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Crear Nuevo Usuario"
+
+            android:textColor="#1575C0"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/InputName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:hint="Nombre"
+            android:background="@drawable/background_input"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <EditText
+            android:id="@+id/InputEmial"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="@string/ingresar_email"
+            android:background="@drawable/background_input"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_13ssp"
+            />
+
+
+        <EditText
+            android:id="@+id/InputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="@string/ingrese_contrese_a"
+            android:background="@drawable/background_input"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <EditText
+            android:id="@+id/InputPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="@string/confirme_contrase_a"
+            android:background="@drawable/background_input"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_13ssp"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tvRegistarUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/crear_usuario"
+            android:onClick="GuardarNewUser"
+            android:textSize="@dimen/_13ssp"
+            app:cornerRadius="@dimen/_8sdp"
+            />
+
+        <TextView
+            android:id="@+id/tvIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:onClick="IntoSesion"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+
+</ScrollView>
