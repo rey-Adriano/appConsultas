@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ConsultasApp</string>
+    <string name="app_name">Consultas</string>
     <string name="bienvenido">Bienvenido</string>
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="bienvenido_al_app_de_consultas">Bienvenido al app De consultas</string>
@@ -9,4 +9,8 @@
     <string name="crear_nuevo_usuario">Crear Nuevo Usuario</string>
     <string name="confirme_contrase_a">Confirme Contraseña</string>
     <string name="crear_usuario">Crear Usuario</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="salir">Salir</string>
+    <string name="crear_sala">Crear sala</string>
+    <string name="chatscreados">ChatsCreados</string>
 </resources>
