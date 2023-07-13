@@ -37,7 +37,7 @@
          tools:ignore="TextSizeCheck" />
 
      <EditText
-         android:id="@+id/InputEmial"
+         android:id="@+id/InputEmial1"
          android:layout_width="match_parent"
          android:layout_height="@dimen/_45sdp"
          android:layout_marginTop="@dimen/_40sdp"
@@ -54,7 +54,7 @@
          />
 
      <EditText
-         android:id="@+id/InputPassword"
+         android:id="@+id/InputPassword1"
          android:layout_width="match_parent"
          android:layout_height="@dimen/_45sdp"
          android:layout_marginTop="@dimen/_16sdp"
@@ -71,7 +71,7 @@
          />
 
      <com.google.android.material.button.MaterialButton
-         android:id="@+id/ingresar"
+         android:id="@+id/BtnIngresar"
          android:layout_width="match_parent"
          android:layout_height="@dimen/_50sdp"
          android:layout_marginTop="@dimen/_20sdp"
