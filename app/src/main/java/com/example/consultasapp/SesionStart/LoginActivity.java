@@ -2,42 +2,35 @@ package com.example.consultasapp.SesionStart;
 
 import static android.content.ContentValues.TAG;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.consultasapp.R;
 import com.example.consultasapp.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private ActivityLoginBinding binding;
-    Button agregarB;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        com.example.consultasapp.databinding.ActivityLoginBinding binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_login);
         setContentView(binding.getRoot());
-
 
     }
 
@@ -48,8 +41,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-
-
     public void ingresar(View view) {
         Button miBoton = findViewById(R.id.ingresar);
         miBoton.setOnClickListener(v -> addDataFirestore()
@@ -57,12 +48,11 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-
     private void addDataFirestore(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Object> user = new HashMap<>();
-        user.put("nombre", "sara");
-        user.put("apellido",  "garay");
+        user.put("nombre", "greys");
+        user.put("apellido",  "ponce");
         user.put("edad", 23);
         db.collection("usuarios")
                 .add(user)
