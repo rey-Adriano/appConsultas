@@ -23,11 +23,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_40sdp"
             android:text="Crear Nuevo Usuario"
-
             android:textColor="#1575C0"
             android:textSize="@dimen/_18sdp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/InputName"

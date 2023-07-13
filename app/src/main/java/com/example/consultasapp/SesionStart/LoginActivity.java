@@ -51,8 +51,8 @@ public class LoginActivity extends AppCompatActivity {
     private void addDataFirestore(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Object> user = new HashMap<>();
-        user.put("nombre", "greys");
-        user.put("apellido",  "ponce");
+        user.put("nombre", "mario");
+        user.put("apellido",  "MARIA");
         user.put("edad", 23);
         db.collection("usuarios")
                 .add(user)
