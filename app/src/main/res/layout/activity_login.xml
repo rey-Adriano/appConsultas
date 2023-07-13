@@ -92,5 +92,6 @@
          android:textSize="@dimen/_14sdp"
          android:textStyle="bold"
          tools:ignore="TouchTargetSizeCheck" />
+
  </LinearLayout>
 </ScrollView>
